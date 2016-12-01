@@ -1,0 +1,23 @@
+{
+  "name": "mdate",
+  "version": "1.0.0",
+  "description": "date format",
+  "main": "MDate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinHuangJing/MDate.git"
+  },
+  "keywords": [
+    "date",
+    "format"
+  ],
+  "author": "Hjj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinHuangJing/MDate/issues"
+  },
+  "homepage": "https://github.com/MartinHuangJing/MDate#readme"
+}
