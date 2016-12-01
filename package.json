@@ -1,5 +1,5 @@
 {
-  "name": "mdate-format",
+  "name": "mini-date-format",
   "version": "1.0.0",
   "description": "date format",
   "main": "MDate.js",
