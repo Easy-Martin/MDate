@@ -1,5 +1,5 @@
 /**
- * Created by wonders on 2016/12/1.
+ * Created by huangjingjing on 2016/12/1.
  */
 ;
 (function(global) {
