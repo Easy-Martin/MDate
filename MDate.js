@@ -3,14 +3,19 @@
  */
 ;
 (function(global) {
-    function MDate(D, F) {
-        if (typeof D !== 'string' || typeof F !== 'string') {
+    var result, tempRes, thisDate;
+
+    function MDate(F, D) {
+        if (typeof F !== 'string') {
             throw new Error('param is a string')
         }
-        this._D = new Date(D.replace(/\-/g, '/'));
-        let res = DateFormat(this._D, F);
-        this._D = null;
-        return res;
+        thisDate = D ? new Date(D.replace(/\-/g, '/')) : new Date();
+        if (thisDate.toString() === 'Invalid Date') {
+            throw new Error('Error date')
+        }
+        result = DateFormat(thisDate, F);
+        thisDate = tempRes = null;
+        return result;
     }
 
     function DateFormat(D, F) {
@@ -29,9 +34,9 @@
                 F = F.replace(RegExp.$1, (RegExp.$1.length == 1) ? (O[K].toString()) : (O[K] < 10) ? ('0' + O[K].toString()) : (O[K].toString()))
             }
         }
-        var result = D.toUTCString();
+        tempRes = D.toUTCString();
         D = null;
-        return (F ? F : result)
+        return (F ? F : tempRes)
     }
 
     if (typeof module !== 'undefined' && module.exports) {

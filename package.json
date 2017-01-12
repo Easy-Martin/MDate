@@ -1,6 +1,6 @@
 {
     "name": "mini-date-format",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "date format",
     "main": "MDate.js",
     "scripts": {
