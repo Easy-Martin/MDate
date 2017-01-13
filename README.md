@@ -26,7 +26,7 @@ F-->'YYYY-MM-DD mm:ss:qq S'
 'S' ----- 'millisecond'
 
 
-M--> object Date  or  string Date
+M--> object Date  or  string Date , default new Date();
 
 ```
 
